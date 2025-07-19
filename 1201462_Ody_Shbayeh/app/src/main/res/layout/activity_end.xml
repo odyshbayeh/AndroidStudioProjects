@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".End" >
+
+    <TextView
+        android:id="@+id/textView10"
+        android:layout_width="match_parent"
+        android:layout_height="75dp"
+        android:text="Quiz Results"
+        android:textAlignment="center"
+        android:textSize="60sp" />
+
+    <TextView
+        android:id="@+id/yourScore"
+        android:layout_width="match_parent"
+        android:layout_height="77dp"
+        android:hint="your score"
+        android:textAlignment="center"
+        android:textSize="34sp" />
+
+    <TextView
+        android:id="@+id/TopPlayers"
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:hint="top 5 scores" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="157dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/AllPLayers"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:hint="the number of players" />
+
+        <TextView
+            android:id="@+id/AVGScore"
+            android:layout_width="match_parent"
+            android:layout_height="54dp"
+            android:hint="AVG Score" />
+
+        <TextView
+            android:id="@+id/HighiestScore"
+            android:layout_width="match_parent"
+            android:layout_height="47dp"
+            android:hint="Highiest Score" />
+    </LinearLayout>
+
+    <EditText
+        android:id="@+id/Searchname"
+        android:layout_width="match_parent"
+        android:layout_height="76dp"
+        android:ems="10"
+        android:hint="enter the name of the player to reveal the score"
+        android:inputType="text" />
+
+    <Button
+        android:id="@+id/SearchUser"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Search Player Score" />
+
+    <TextView
+        android:id="@+id/SearchPlayerScore"
+        android:layout_width="match_parent"
+        android:layout_height="52dp"
+        android:hint="this is where we show the players score" />
+
+    <Button
+        android:id="@+id/Restart"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Start New Quiz" />
+</LinearLayout>

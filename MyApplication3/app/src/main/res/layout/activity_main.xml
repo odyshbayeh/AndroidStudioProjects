@@ -1,0 +1,61 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+    <TextView
+        android:id="@+id/favoriteColorText"
+        android:layout_width="373dp"
+        android:layout_height="71dp"
+        android:text="No favorite color selected"
+        android:textSize="18sp" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:id="@+id/circleRed"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/red"
+            app:srcCompat="@drawable/red" />
+
+        <ImageView
+            android:id="@+id/circleBlue"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/blue"
+            app:srcCompat="@drawable/blue" />
+
+        <ImageView
+            android:id="@+id/circleGreen"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:background="@drawable/green"
+            app:srcCompat="@drawable/green" />
+
+        <Spinner
+            android:id="@+id/colorSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/saveColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Save Favorite Color" />
+
+    <Button
+        android:id="@+id/clearColorButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Clear Favorite Color" />
+</LinearLayout>

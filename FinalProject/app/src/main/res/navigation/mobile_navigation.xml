@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/nav_today">
+
+    <!-- Today Fragment -->
+    <fragment
+        android:id="@+id/nav_today"
+        android:name="com.example.finalproject.ui.tasks.TodayFragment"
+        android:label=""
+        tools:layout="@layout/fragment_today">
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- New Task Fragment -->
+    <fragment
+        android:id="@+id/nav_new_task"
+        android:name="com.example.finalproject.ui.tasks.NewTaskFragment"
+        android:label=""
+        tools:layout="@layout/fragment_new_task" >
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- All Tasks Fragment -->
+    <fragment
+        android:id="@+id/nav_all_tasks"
+        android:name="com.example.finalproject.ui.tasks.AllTasksFragment"
+        android:label=""
+        tools:layout="@layout/fragment_all_tasks" >
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Completed Tasks Fragment -->
+    <fragment
+        android:id="@+id/nav_completed_tasks"
+        android:name="com.example.finalproject.ui.tasks.CompletedTasksFragment"
+        android:label=""
+        tools:layout="@layout/fragment_completed_tasks" >
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Search Fragment -->
+    <fragment
+        android:id="@+id/nav_search"
+        android:name="com.example.finalproject.ui.tasks.SearchFragment"
+        android:label=""
+        tools:layout="@layout/fragment_search" >
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Profile Fragment -->
+    <fragment
+        android:id="@+id/nav_profile"
+        android:name="com.example.finalproject.ui.user.ProfileFragment"
+        android:label=""
+        tools:layout="@layout/fragment_profile" >
+        <argument
+            android:name="USER_EMAIL"
+            app:argType="string" />
+    </fragment>
+
+    <!-- Logout Fragment -->
+    <fragment
+        android:id="@+id/nav_logout"
+        android:name="com.example.finalproject.ui.user.LogoutFragment"
+        android:label=""
+        tools:layout="@layout/fragment_logout" />
+</navigation>

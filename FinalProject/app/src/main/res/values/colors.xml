@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <!-- Purple Colors -->
+    <color name="colorPurpleLight">#E1BEE7</color> <!-- Light Lavender -->
+    <color name="colorPurpleMedium">#BA68C8</color> <!-- Medium Purple -->
+    <color name="colorPurpleDark">#7B1FA2</color> <!-- Dark Purple -->
+    <color name="colorPurpleAccent">#D500F9</color> <!-- Vibrant Purple -->
+
+    <!-- Green Colors -->
+    <color name="colorGreenLight">#A5D6A7</color> <!-- Light Green -->
+    <color name="colorGreenMedium">#4CAF50</color> <!-- Medium Green -->
+    <color name="colorGreenDark">#2E7D32</color> <!-- Dark Green -->
+    <color name="colorGreenAccent">#00E676</color> <!-- Vibrant Green -->
+
+    <!-- Red Colors -->
+    <color name="colorRedLight">#FFCDD2</color> <!-- Light Red -->
+    <color name="colorRedMedium">#F44336</color> <!-- Medium Red -->
+    <color name="colorRedDark">#B71C1C</color> <!-- Dark Red -->
+    <color name="colorRedAccent">#FF1744</color> <!-- Vibrant Red -->
+
+    <!-- Black and White -->
+    <color name="colorBlack">#000000</color>
+    <color name="colorWhite">#FFFFFF</color>
+
+    <!-- Blue Colors -->
+    <color name="colorBlueLight">#BBDEFB</color> <!-- Light Blue -->
+    <color name="colorBlueMedium">#2196F3</color> <!-- Medium Blue -->
+    <color name="colorBlueDark">#0D47A1</color> <!-- Dark Blue -->
+    <color name="colorBlueAccent">#448AFF</color> <!-- Vibrant Blue -->
+
+    <!-- Yellow Colors -->
+    <color name="colorYellowLight">#FFF9C4</color> <!-- Light Yellow -->
+    <color name="colorYellowMedium">#FFEB3B</color> <!-- Medium Yellow -->
+    <color name="colorYellowDark">#FBC02D</color> <!-- Dark Yellow -->
+    <color name="colorYellowAccent">#FFEA00</color> <!-- Vibrant Yellow -->
+
+    <!-- Additional Colors for Contrast -->
+    <color name="colorGray">#808080</color> <!-- Neutral Gray -->
+    <color name="colorLightGray">#D3D3D3</color> <!-- Light Gray -->
+    <color name="colorDivider">#BDBDBD</color>
+    <color name="headerBackground">#5B5A5A</color>
+    <color name="headerTextColor">#00BCD4</color> <!-- Divider Color -->
+</resources>

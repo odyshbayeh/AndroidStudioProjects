@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+
+    <item
+        android:title="@string/profile">
+        <menu>
+            <item
+                android:id="@+id/nav_profile"
+                android:icon="@drawable/ic_baseline_account_circle_24"
+                android:title="@string/profile" />
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/all_tasks_activities">
+        <menu>
+            <group android:checkableBehavior="single">
+                <item
+                    android:id="@+id/nav_today"
+                    android:icon="@drawable/ic_nav_today"
+                    android:title="@string/today" />
+                <item
+                    android:id="@+id/nav_new_task"
+                    android:icon="@drawable/ic_baseline_add_24"
+                    android:title="@string/new_task" />
+                <item
+                    android:id="@+id/nav_all_tasks"
+                    android:icon="@drawable/ic_baseline_article_24"
+                    android:title="@string/all_tasks" />
+                <item
+                    android:id="@+id/nav_completed_tasks"
+                    android:icon="@drawable/ic_nav_add_task"
+                    android:title="@string/completed_tasks" />
+                <item
+                    android:id="@+id/nav_search"
+                    android:icon="@drawable/ic_baseline_search_24"
+                    android:title="@string/search" />
+            </group>
+        </menu>
+    </item>
+
+    <item
+        android:title="@string/logout">
+        <menu>
+            <item
+                android:id="@+id/nav_logout"
+                android:icon="@drawable/ic_baseline_logout_24"
+                android:title="@string/logout" />
+        </menu>
+    </item>
+</menu>

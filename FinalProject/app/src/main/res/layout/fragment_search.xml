@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp">
+
+
+    <TextView
+        android:layout_width="382dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:text="@string/search"
+        android:textColor="@color/colorBlack"
+        android:textAlignment="center"
+        android:textSize="24sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/search_keyword"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/search_by_keywords"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginTop="16dp"
+        android:inputType="text" />
+
+    <EditText
+        android:id="@+id/search_start_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/start_date_e_g_yyyy_mm_dd"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginTop="16dp"
+        android:inputType="none"
+        android:focusable="false" />
+
+    <EditText
+        android:id="@+id/search_end_date"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/due_date_e_g_yyyy_mm_dd"
+        android:background="@drawable/rounded_edit_text"
+        android:layout_marginTop="8dp"
+        android:inputType="none"
+        android:focusable="false" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="82dp"
+        android:orientation="horizontal">
+
+        <Space
+            android:layout_width="138dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Button
+            android:id="@+id/search_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:text="@string/search" />
+
+        <Space
+            android:layout_width="57dp"
+            android:layout_height="match_parent"
+            android:layout_weight="0" />
+
+        <Spinner
+            android:id="@+id/sort_spinner_search"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="right"
+            android:layout_marginTop="16dp"
+            android:background="@drawable/rounded_edit_text"
+            android:entries="@array/sort_options"
+            android:spinnerMode="dropdown" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="@android:color/darker_gray"
+        android:layout_marginTop="16dp" />
+
+    <TextView
+        android:id="@+id/no_results_text"
+        android:layout_width="61dp"
+        android:layout_height="258dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/rounded_edit_text"
+        android:text="@string/no_results_found"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/search_results_list"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="8dp"
+        android:layout_weight="1"
+        android:background="@drawable/rounded_edit_text" />
+</LinearLayout>
